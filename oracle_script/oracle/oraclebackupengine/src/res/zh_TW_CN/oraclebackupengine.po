@@ -1,0 +1,39 @@
+#
+# Resource script for US.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cfl 2.0\n"
+"POT-Creation-Date: 2004-04-11 22:24\n"
+"PO-Revision-Date: 2007-10-16 18:40\n"
+"Last-Translator: yy_cn <yy_cn@eisoo.com>\n"
+"Language-Team: eisoo - http://www.eisoo.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
+"Previous-Translator: \n"
+
+msgid	  "IDS_ORACLE_SVR_NAME"
+msgstr  "Oracle 实例"
+
+msgid   "IDS_ORACLE_INCREMENTAL0_BACKUP"
+msgstr  "Oracle 完全备份"
+
+msgid   "IDS_ORACLE_INCREMENTAL1_BACKUP"
+msgstr  "Oracle 增量备份"
+
+msgid   "IDS_ORACLE_ARCHIVE_BACKUP"
+msgstr  "Oracle 事务日志备份"
+
+msgid   "IDS_GET_BACKUP_TYPE_ERROR"
+msgstr  "不支持的备份类型。"
+
+msgid	  "IDS_CREATE_ORACLE_DATASOURCE_FAILED"
+msgstr	"创建Oracle datasource组件失败。"
+
+msgid	  "IDS_CREATE_ORACLE_BACKUP_SCHEDULER_FAILED"
+msgstr	"创建Oracle schedule备份组件失败。"
+
+msgid	  "IDS_CREATE_ORACLE_RETORE_SCHEDULER_FAILED"
+msgstr	"创建Oracle schedule恢复组件失败。"

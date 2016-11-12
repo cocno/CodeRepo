@@ -1,0 +1,447 @@
+#
+# Resource script for US.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cfl 2.0\n"
+"POT-Creation-Date: 2004-04-11 22:24\n"
+"PO-Revision-Date: 2007-10-16 18:40\n"
+"Last-Translator: yy_cn <yy_cn@eisoo.com>\n"
+"Language-Team: eisoo - http://www.eisoo.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
+"Previous-Translator: \n"
+
+
+######################################/
+#
+# String Table for null
+#
+#ncOracleBackupExec.cpp
+msgid	"IDS_CREATE_PUSH_STREAM_REACTOR_FAILED"
+msgstr	"Failed to create backup forward data stream component."
+
+msgid	"IDS_CREATE_RESOURCE_MANAGER_FAILED"
+msgstr	"Failed to create Resource Manager component."
+
+msgid	"IDS_ORACLE_DATASOURCE_NOT_ONE"
+msgstr	"Only one database can be backed up in one Oracle backup job. If in HA, please confirm whether the data source on two nodes are consistent."
+
+msgid	"IDS_ORACLE_VERSION_NOT_SUPPORT_COMPRESS"
+msgstr	"The version of the Oracle instance %s being backed up is 9i, which does not support source compression, so the backup will be executed without source compression."
+
+msgid	"IDS_CREATE_ORACLE_CID_OBJECT_ERROR"
+msgstr  "Failed to create the CID object."
+
+msgid	"IDS_CREATE_ORACLE_EXTENSION_OBJECT_ERROR"
+msgstr  "Failed to create the extension object."
+
+msgid	"IDS_CREATE_ORACLE_TIMEPOINT_OBJECT_FAILED"
+msgstr  "Failed to create the time-point object."
+
+msgid	"IDS_CREATE_ORACLE_DATA_OBJECT_FAILED"
+msgstr  "Failed to create the data object."
+
+msgid	"IDS_CREATE_ORACLE_DATA_BLOCK_FAILED"
+msgstr  "Failed to create the data block object."
+
+msgid	"IDS_CURRENT_BACKUP_FILENUM_MESSAGE"
+msgstr	"%s file(s) have been backed up."
+
+msgid	"IDS_BACKUP_PFILE_FILE"
+msgstr	"Backing up the Pfile %s."
+
+msgid	"IDS_BACKUP_DBTABLE_FILE"
+msgstr	"Backing up the database information file %s."
+
+msgid	"IDS_BACKUP_ARCHIVE_FILE"
+msgstr	"Backing up the archive log file %s."
+
+
+#ncOracleBackupSchedule.cpp
+msgid	"IDS_ORACLE_BACKUP_EXCEPTION"
+msgstr	"Exception occurred in the Oracle backup."
+
+msgid	"IDS_ORACLE_BACKUP_UNKOWN_EXCEPTION"
+msgstr	"Unknown exception occurred in the Oracle backup."
+
+msgid	"IDS_ORACLE_BACKUP_STOP"
+msgstr	"Stop the backup."
+
+msgid	"IDS_ORACLE_BACKUP_PAUSE"
+msgstr  "Pause the backup."
+
+msgid	"IDS_ORACLE_BACKUP_RESUME"
+msgstr  "Resume the backup."
+
+msgid	"IDS_GET_LISTENER_NULL"
+msgstr	"The listener got is null."
+
+msgid	"IDS_TIMEPOINT_IS_EMPTY"
+msgstr	"The backup time-point is null, the backup job will be converted to the full backup."
+
+
+#ncOracleDatabasebManager.cpp
+msgid	"IDS_CREATE_ORACLE_MANAGER_FAILED"
+msgstr	"Failed to create Oracle Manager component."
+
+msgid	"IDS_ORACLE_STATUS_NOT_OPEN"
+msgstr	"The status of the Oracle instance %s being backed up is %s, please enable the instance to be open status before the backup."
+
+msgid	"IDS_ORACLE_NOT_ARCHIVELOG_MODE"
+msgstr	"The Oracle instance %s being backed up is in non-archive mode, please switch the instance to be archive mode before the backup."
+
+msgid   "IDS_ORACLE_DATABASE_VERSION"
+msgstr  "The version of the current database being backed up is %s."
+
+msgid	"IDS_ORACLE_ARCHIVE_DEST_FLASHBACK_AREA"
+msgstr	"The archive path of the database is flashback area, which will affect the business continuity, please set the path as a legal directory without flashback area."
+
+msgid	"IDS_ORACLE_ARCHIVE_ILLEGAL"
+msgstr	"The archive path of the Oracle database being backed up is flashback area or illegal. Please set a legal local archive path in non-flashback area for data security."
+
+msgid	"IDS_ORACLE_VERSION_NOT_SUPPORT_BCT"
+msgstr	"The corresponding database version of the instance %s is 9I, which does not support for Block Change Tracking option."
+
+msgid	"IDS_ORACLE_TIMEPOINT_TAG_IS_EMPTY"
+msgstr	"The tag value of the last time-point is null, which may be caused by software upgrade, so the backup will change to full backup."
+
+msgid   "IDS_ORACLE_FULLTIME_POINT_IS_EMPTY"
+msgstr  "No full backup time-point exist, so the incremental backup will convert to full backup to ensure data security."
+
+msgid	"IDS_ORACLE_TIMEPOINT_TAG_IS_NOT_MATCH_TO_FULL"
+msgstr	"The tag information of the job does not match. To ensure the data security, the backup will change to full backup."
+
+msgid	"IDS_ORACLE_TIMEPOINT_TAG_IS_NOT_MATCH_TO_INC"
+msgstr	"The tag information of the job does not match. To ensure the data security, the backup will change to incremental backup."
+
+msgid	"IDS_ORACLE_TIMEPOINT_TAG_IS_NOT_MATCH_TO_CUMULATIVE"
+msgstr	"The tag information of the job does not match. To ensure the data security, the backup will change to accumulative incremental backup."
+
+msgid	"IDS_CREATE_PFILE_FAILED"
+msgstr	"Failed to create the parameter file."
+
+msgid	"IDS_DATABASE_OPEN_CANNOT_RESTORE"
+msgstr	"The status of Oracle instance %s is %s. To ensure the data security, please restart the database instance to be nomount or mounted status before the recovery."
+
+msgid   "IDS_DATABASE_NOT_STARTRD_STATUS"
+msgstr  "The status of the Oracle database instance %s being restored is %s, the database instance shall be set as started status to restore the control file."
+
+msgid   "IDS_DATABASE_NOT_MOUNTED_STATUS"
+msgstr  "The status of the Oracle database instance %s being restored is %s, the database instance shall be set as mounted or open status to restore the archive log file."
+
+msgid   "IDS_DATABASE_RES_DATAFILE_NOT_MOUNTED_STATUS"
+msgstr  "The status of the Oracle database instance %s being restored is %s, the database instance shall be set as mounted status to restore the system data file %s."
+
+msgid	"IDS_DATABASE_OPEN_CANNOT_RESTORE_DATAFILE"
+msgstr	"The status of Oracle instance %s is %s. To ensure the data security, please restart the database instance to be open or mounted status before the recovery."
+
+msgid	"IDS_ORACLE_TABLE_IMP_FAILED"
+msgstr	"Failed to restore the table %s."
+
+msgid	"IDS_ORACLE_TABLE_EXSIT_IN_PRODUCTION_DB"
+msgstr	"The selected table %s in Oracle table-level recovery exists in the original production database, please rename the table in the backup production database during table-level recovery to ensure the data security."
+
+msgid	"IDS_AUX_DATABASE_STATUS_NOT_NOMOUNT"
+msgstr	"The status of the Oracle secondary instance is %s, not in nomount status, so the Oracle table-level recovery cannot be executed."
+
+msgid	"IDS_AUX_DATABASE_STATUS_NOT_OPEN"
+msgstr	"The status of the Oracle secondary instance is %s, not in open status, so the Oracle table-level recovery cannot be executed."
+
+msgid   "IDS_ORACLE_INPUT_DATAFILE_ERROR"
+msgstr  "The data file name %s input is not the same as the one recorded in the control file, no relative path shall be contained in the data file name and it shall be case sensitive."
+
+msgid	"IDS_DATABASE_NOT_OPEN_STATUS"
+msgstr	"The status of the Oracle instance %s is %s, please restart the database instance to be open status before the recovery."
+
+msgid	"IDS_GET_USER_CONFIG_FAILED"
+msgstr	"Failed to get user configuration information, user configuration file path: %s."
+
+
+#ncOracleRestoreSchedule.cpp
+msgid	"IDS_ORACLE_RESTORE_EXCEPTION"
+msgstr	"Exception occurred in the Oracle recovery."
+
+msgid	"IDS_ORACLE_RESTORE_UNKOWN_EXCEPTION"
+msgstr	"Unknown exception occurred in the Oracle recovery."
+
+msgid   "IDS_ORACLE_STOP_RESTORE"
+msgstr  "Stopping the Oracle recovery job."
+
+msgid	"IDS_ORACLE_RESTORE_PAUSE"
+msgstr	"Pause the recovery."
+
+msgid	"IDS_ORACLE_RESTORE_RESUME"
+msgstr	"Resume the recovery."
+
+msgid   "IDS_ORACLE_DIRECTORY_NOT_EXSIT"
+msgstr  "The recovery path selected %s is illegal, please select a legal path for the recovery."
+
+
+#ncOracleRestoreExec.cpp
+msgid	"IDS_ORACLE_RESTORE_CTRL_FAILED"
+msgstr	"Failed to restore the Oracle control file."
+
+msgid	"IDS_ORACLE_RESTORE_BACKUP_PIECE"
+msgstr	"The Oracle backup file piece being restored is %s."
+
+msgid   "IDS_ORACLE_TIME_RESTORE_FAILED"
+msgstr  "Oracle recovery failed. As for time-point recovery, please make sure the time-point selected is the client time after the backup is finished."
+
+msgid	"IDS_CURRENT_RESRORE_FILENUM_MESSAGE"
+msgstr	"The count of files restored in the Oracle recovery is %s."
+
+msgid	"IDS_BEGIN_RESTORE_TIME_POINT"
+msgstr	"Start to restore the time-point: %s."
+
+
+#ncOracleCtrlFilePopEvent.cpp
+msgid	"IDS_ORACLE_START_RESTORE_PFILE"
+msgstr	"The parameter file being restored is %s."
+
+msgid	"IDS_ORACLE_START_RESTORE_ARCHIVE"
+msgstr	"The archive log file being restored is %s."
+
+msgid	"IDS_ORACLE_START_RESTORE_DBTABLE"
+msgstr	"The database information file being restored is %s."
+
+msgid	"IDS_ORACLE_RESTORE_DATA_EMPTY"
+msgstr	"The data sent when restoring Oracle is empty."
+
+msgid	"IDS_ORACLE_WRITE_ARCH_FAILED"
+msgstr	"Exception occurred when restoring the Oracle log files."
+
+
+#ncOracleExecThread.cpp
+msgid	"IDS_START_RMAN_EXE_ERROR"
+msgstr  "The client failed to start the Oracle RMAN process."
+
+msgid	"IDS_START_RMAN_EXE_NOKNOWN_ERROR"
+msgstr  "The client failed to start the Oracle RMAN process, unknown exception."
+
+msgid	"IDS_CREATE_RMAN_OUTPUT_PIPE_FAILED"
+msgstr  "The client failed to create the Oracle RMAN output pipe, error code: %d."
+
+msgid	"IDS_CREATE_RMAN_EXE_PROCESS_FAILED"
+msgstr  "The client failed to start the Oracle RMAN process, error code: %d."
+
+msgid	"IDS_RMAN_EXITED_SCHEDULE_WILL_STOPED"
+msgstr	"The RMAN process has exited abnormally, the job will be stopped forcedly."
+
+msgid   "IDS_ORACLE_RMAN_OUTPUT_FAILED"
+msgstr	"Error occurred in RMAN output thread, cause: %s."
+
+msgid	"IDS_ORACLE_ARC_NOT_FIND_IN_BACKUP_PICES"
+msgstr	"The current backup set does not contain the selected log files in advanced recovery, please confirm whether the input is correct."
+
+msgid   "IDS_ORACLE_ERROR_RMAN_06026"
+msgstr  "Media server does not have backup set of the required file."
+
+msgid   "IDS_ORACLE_ERROR_RMAN_06056"
+msgstr  "The data files cannot be got for the backup, cause: the corresponding data files have not been deleted when the tablespace is deleted."
+
+msgid   "IDS_ORACLE_BEFORE_RESETLOG_TIME"
+msgstr  "The database cannot be restored to the valid backup or archive redo log by the selected time-point."
+
+msgid   "IDS_ORACLE_RMAN_OUTPUT_THREAD_ERROR"
+msgstr  "Exception occurred when executing database RMAN process."
+
+msgid	"IDS_ORACLE_RMAN_OUTPUT_THREAD_UNKOWN_ERROR"
+msgstr	"Unknown error information is output by RMAN."
+
+msgid	"IDS_GET_USER_CONFIG_TRACE_FAILED"
+msgstr	"Failed to get user configuration information or write TRACE configuration, user configuration file path: %s."
+
+
+#ncOraclePopEvent.cpp
+msgid	"IDS_ORACLE_RESTORE_GNS_NOEXIST"
+msgstr	"The GNS %s needed for recovery does not exist in the media server."
+
+
+#ncOracleScheduleCommon.cpp
+msgid   "IDS_ORACLE_DATASOURCE_NOT_EXSIT"
+msgstr  "The data source with the instance name as %s is not set in creating the backup job, please set it and restart the job."
+
+msgid	"IDS_ORACLE_RESTORE_ARCHIVE_PATH_NOLEGAL"
+msgstr	"The archive path of Oracle backup server %s does not exist in the recovery server, please create it by the installation user of the Oracle software."
+
+msgid	"IDS_GET_ARCHIVE_DEST_USER_FAILED"
+msgstr	"Failed to get the owner info of the archive path %s, please make sure the path is correct."
+
+msgid	"IDS_ORACLE_ARCHIVE_DEST_USER_ROOT"
+msgstr	"The owner of Oracle archive path %s is the root user. To ensure the availability of restored archive log, please change the path to be the group and owner of the installation user for Oracle software."
+
+
+#ncRmanDataManager.cpp
+msgid	"IDS_ORACLE_CREATE_SVRPIPE_FAILED"
+msgstr	"Failed to create the Oracle server pipe."
+
+msgid	"IDS_ORACLE_CREATE_EVENTS_FAILED"
+msgstr	"Failed to create the Oracle server pipe object."
+
+msgid	"IDS_CLIENT_ORACLE_PIPE_CONNECT_FAILED"
+msgstr  "The client failed to connect the Oracle pipe."
+
+msgid	"IDS_RECEIVE_SBTINIT_MSG_FAILED"
+msgstr  "The client failed to receive the message ORA_SBTINIT, error code: %d, message code received: %d."
+
+msgid	"IDS_RECEIVE_PID_VALUE_FAILED"
+msgstr  "The client failed to receive the Oracle pid, error code: %d, message code received: %d."
+
+msgid	"IDS_RECEIVE_PID_MSG_FAILED"
+msgstr  "The client failed to receive Oracle pid message, process ID: %s, received message code length: %d."
+
+msgid	"IDS_PID_MSG_OVER_FAILED"
+msgstr  "The client failed to send the message ORA_PID_MSG_OVER to Oracle, error code: %d."
+
+msgid	"IDS_RECEIVE_NEWSET_OR_BAKEND_MSG_FAILED"
+msgstr  "The client failed to receive the message ORA_NEWSET or ORA_BAKEND, error code: %d, message code received: %d."
+
+msgid	"IDS_RECEIVE_NEWSET_FILEMSG_FAILED"
+msgstr  "The client failed to receive the message NEWSET_FILEMSG, error code received: %d."
+
+msgid	"IDS_RECEIVE_BLOCK_SIZE_FAILED"
+msgstr	"Failed to receive the message ORA_BLOCK_SIZE sent by Oracle, error code: %d, message code: %d."
+
+msgid	"IDS_RECEIVE_NEWSET_OR_BAKEND_MSG_ERROR"
+msgstr  "The message received by the client does not match with the message ORA_NEWSET or ORA_BAKEND, message code received: %d."
+
+msgid	"IDS_RECEIVE_DATASIZE_ORA_ENDSET_MSG_FAILED"
+msgstr  "The client failed to receive the message ORA_DATASIZE or ORA_ENDSET, error code received: %d."
+
+msgid	"IDS_RECEIVE_DATASIZE_DATABLOCK_FAILED"
+msgstr  "The client failed to receive the data sent by Oracle, error code received: %d."
+
+msgid	"IDS_RECEIVE_DATASIZE_ENDSET_ERROR"
+msgstr  "The client failed to receive the message ORA_DATASIZE or ORA_ENDSET sent by Oracle, message code received: %d."
+
+msgid	"IDS_ORACLE_RESTORE_READ_FILE_EMPTY"
+msgstr	"The restored Oracle file piece received is empty."
+
+msgid	"IDS_ORACLE_RECEIVE_BLOCK_SIZE_FAILED"
+msgstr	"The Oracle block size being restored failed, error code: %d."
+
+msgid	"IDS_ORACLE_RECEIVE_SBT_RESTORE_OVER_FAILED"
+msgstr	"Failed to send the message ORA_SBT_RESTORE_OVER to Oracle, error code: %d."
+
+msgid	"IDS_ORACLE_RECEIVE_STILL_DATA_MSG_FAILED"
+msgstr	"Failed to receive the message ORA_STILL_DATA sent by Oracle in recovery, error code: %d."
+
+msgid	"IDS_ORACLE_SEND_DATASIZE_FAILED"
+msgstr	"Failed to send the message ORA_DATASIZE to Oracle in recovery, error code: %d."
+
+msgid	"IDS_RECEIVE_BAKEND_MSG_INCONSISTENT"
+msgstr	"The ID of ORA_BAKEND message sent by Oracle in the recovery is inconsistent, message code: %d."
+
+msgid	"IDS_ORACLE_SEND_ENDSET_FAILED"
+msgstr	"Failed to send the message ORA_ENDSET to Oracle in the recovery, error code: %d."
+
+msgid	"IDS_ORACLE_RECEIVE_ENDSET_FAILED"
+msgstr	"Failed to receive the message ORA_ENDSET sent by Oracle in the recovery, error code: %d."
+
+msgid	"IDS_ORACLE_RECEIVE_STILL_DATA_OR_ORA_ENDSET_FAILED"
+msgstr	"Failed to receive the message ORA_STILL_DATA or ORA_ENDSET sent by Oracle in the recovery, error code: %d, message code: %d."
+
+msgid	"IDS_RECEIVE_BACKEND_MSG_FAILED"
+msgstr  "The client failed to receive the message ORA_BAKEND, error code: %d."
+
+msgid	"IDS_RECEIVE_CLOSEPIPE_MSG_FAILED"
+msgstr  "The client failed to receive the message ORA_CLOSE_PIPE, error code: %d, message code: %d."
+
+msgid	"IDS_SEND_CLOSE_PIPE_FAILED"
+msgstr  "The client failed to send the message ORA_CLOSE_PIPE to Oracle, error code: %d."
+
+msgid	"IDS_RECEIVE_MSG_FAILED"
+msgstr	"The client cannot receive message normally, error message ID: %d."
+
+msgid	"IDS_SEND_CROSSCHECK_MSG_FAILED"
+msgstr	"Failed to send the message ORA_SBTINIT/ORA_CROSSCHECK_BEGIN to Oracle, error code: %d, message code: %d."
+
+msgid	"IDS_RECEIVE_CROSSCHECK_MSG_FAILED"
+msgstr	"The client failed to receive the message ORA_CROSSCHECK_BEGIN/ORA_CROSSCHECK_END, error code: %d."
+
+msgid	"IDS_RECEIVE_PIECE_NAME_FAILED"
+msgstr	"The client failed to receive the Oracle backup piece message, backup piece name: %s, received message code length: %d."
+
+msgid	"IDS_SEND_AVAILABLE_EXPIRED_MSG_FAILED"
+msgstr	"Failed to send the message ORA_CROSSCHECK_AVAILABLE/ORA_CROSSCHECK_EXPIRED to Oracle, error code: %d."
+
+
+#ncOracleTablesRestoreCommon.cpp
+msgid	"IDS_ORACLE_SELECT_TABLE_NOT_EXSITS"
+msgstr	"The selected table %s in Oracle table-level recovery does not exist in the backup set; you can query the corresponding information of the table and tablespace recorded in the file %s of the backup set."
+
+msgid	"IDS_ORACLE_SELECT_TABLE_DUPLICATED"
+msgstr	"The selected table %s in single-table recovery has a table with the same name in the backup set, please specify the owner of the table to be restored and the format is sys.table (username.table name)."
+
+msgid	"IDS_SELF_CONTAINED_CHECK_BEGIN"
+msgstr	"The version of the database %s being restored by Oracle table-level recovery is 11gR2, so it is necessary to run the self-contained detection, please wait..."
+
+msgid	"IDS_SELF_CONTAINED_CHECK_SUCCESS"
+msgstr	"Succeeded in running the self-contained detection for Oracle database being restored by table-level recovery, and partial tablespaces will be excluded for recovery."
+
+msgid	"IDS_SELF_CONTAINED_CHECK_FAILED"
+msgstr	"Failed to run the self-contained detection for the Oracle database being restored by table-level recovery, the whole database will be restored."
+
+msgid	"IDS_CURRENT_USER_CAN_NOT_IMP_SYS_TABLE"
+msgstr	"The current user %s cannot import and export the table %s.%s, if the table cannot be restored, please import or export it manually by switching to sys."
+
+msgid	"IDS_OPEN_SREVICES_MANAGER_FAILE"
+msgstr	"Failed to open the Windows Services Manager."
+
+msgid	"IDS_ENUM_SREVICES_STATUS_FAILE"
+msgstr	"Failed to browse Windows service, error code: %d."
+
+msgid	"IDS_CAN_NOT_FIND_FILE"
+msgstr	"Failed to get the file %s."
+
+msgid	"IDS_CURRENT_USER_AND_INSTALL_USER_NOT_SAME"
+msgstr	"The current user %s is not the same as the Oracle installation user %s, please change to the Oracle installation user for recovery."
+
+msgid	"IDS_ORACLE_STAGE_PATH_NOLEGAL"
+msgstr	"The stage path %s input during Oracle table-level recovery is illegal, please input a legal path with enough space for the recovery."
+
+msgid	"IDS_ORACLE_STAGE_PATH_HAVE_OTHER_FILES"
+msgstr	"The stage path %s input in Oracle table-level recovery has %d file(s), please set the stage path as an empty directory for the security of production database recovery."
+
+msgid	"IDS_ORACLE_SINGLE_TABLE_RESTORE_DBNAME_SAME"
+msgstr	"The secondary database name %s input in Oracle table-level recovery is the same as the backed-up production database name %s, please modify the former."
+
+msgid	"IDS_ORAPWD_CREATE_PASSWORD_FAILED"
+msgstr	"The orapwd program failed to create password %s, error code: %d."
+
+msgid	"IDS_ORACLE_START_APP_FAILED"
+msgstr	"Failed to start the application %s, error code: %d."
+
+msgid	"IDS_ORACLE_SYSTEM_SERVICE_NO_ENVIROMENT"
+msgstr	"No environment variables related to Oracle exists under the system user when executing Oracle table-level recovery for Windows, please start the client service by the current user in Services Manager."
+
+msgid	"IDS_ORACLE_SINGLE_TABLE_RESTORE_OVER_PROMPT"
+msgstr	"The Oracle table-level recovery has finished. You can stop the secondary database instance and delete the data restored to %s to release the used space of disk and memory."
+
+msgid	"IDS_RECREATE_BCT_FILE"
+msgstr	"Recreate the block change tracking file %s."
+
+msgid	"IDS_BEGSEQ_LARGER_THAN_CURRENT"
+msgstr	"The start log sequence number entered is larger than the current sequence number."
+
+msgid	"IDS_ENDSEQ_LARGER_THAN_CURRENT"
+msgstr	"The end log sequence number %s entered is larger than the current sequence number %s."
+
+msgid	"IDS_DATAFILE_ABNORMAL"
+msgstr	"The status of the data file %s is %s."
+
+msgid	"IDS_TABLESPACE_OFFLINE"
+msgstr	"The status of the tablespace %s is OFFLINE."
+
+msgid	"IDS_ORACLE_DYLISTENER"
+msgstr	"Oracle instance %s is dynamic listener. Please switch to Oracle installation user for recovery, or add static listener for instance and reload listener."
+
+msgid	"IDS_FROK_FAIL"
+msgstr	"Failed to create initialization process."
+
+msgid	"IDS_INIT_FAIL"
+msgstr	"Failed to initialize mml configurations, view failure information by files %s."
+

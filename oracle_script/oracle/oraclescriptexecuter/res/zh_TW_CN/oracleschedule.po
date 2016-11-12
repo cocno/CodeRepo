@@ -1,0 +1,447 @@
+#
+# Resource script for US.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cfl 2.0\n"
+"POT-Creation-Date: 2004-04-11 22:24\n"
+"PO-Revision-Date: 2007-10-16 18:40\n"
+"Last-Translator: yy_cn <yy_cn@eisoo.com>\n"
+"Language-Team: eisoo - http://www.eisoo.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
+"Previous-Translator: \n"
+
+
+######################################/
+#
+# String Table for null
+#
+#ncOracleBackupExec.cpp
+msgid	"IDS_CREATE_PUSH_STREAM_REACTOR_FAILED"
+msgstr	"创建备份正向数据流组件失败。"
+
+msgid	"IDS_CREATE_RESOURCE_MANAGER_FAILED"
+msgstr	"创建资源管理器组件失败。"
+
+msgid	"IDS_ORACLE_DATASOURCE_NOT_ONE"
+msgstr	"Oracle 定时备份一个任务只支持一个数据库备份,如果是双机请确定主备机的数据源是否一致。"
+
+msgid	"IDS_ORACLE_VERSION_NOT_SUPPORT_COMPRESS"
+msgstr	"正在备份的Oracle %s 版本是9i,9i不支持源端压缩功能,将自动切换成非源端压缩模式备份。"
+
+msgid	"IDS_CREATE_ORACLE_CID_OBJECT_ERROR"
+msgstr  "创建CID对象失败。"
+
+msgid	"IDS_CREATE_ORACLE_EXTENSION_OBJECT_ERROR"
+msgstr  "创建扩展名对象失败。"
+
+msgid	"IDS_CREATE_ORACLE_TIMEPOINT_OBJECT_FAILED"
+msgstr  "创建时间点对象失败。"
+
+msgid	"IDS_CREATE_ORACLE_DATA_OBJECT_FAILED"
+msgstr	"创建数据对象失败。"
+
+msgid	"IDS_CREATE_ORACLE_DATA_BLOCK_FAILED"
+msgstr	"创建数据块对象失败。"
+
+msgid	"IDS_CURRENT_BACKUP_FILENUM_MESSAGE"
+msgstr	"Oracle备份当前已备份的文件数:%s。"
+
+msgid	"IDS_BACKUP_PFILE_FILE"
+msgstr	"正在备份Pfile文件: %s。"
+
+msgid	"IDS_BACKUP_DBTABLE_FILE"
+msgstr	"正在备份数据库信息文件: %s。"
+
+msgid	"IDS_BACKUP_ARCHIVE_FILE"
+msgstr	"正在备份归档日志文件: %s。"
+
+
+#ncOracleBackupSchedule.cpp
+msgid	"IDS_ORACLE_BACKUP_EXCEPTION"
+msgstr	"Oracle 备份出现异常。"
+
+msgid	"IDS_ORACLE_BACKUP_UNKOWN_EXCEPTION"
+msgstr	"Oracle 备份出现未知异常。"
+
+msgid	"IDS_ORACLE_BACKUP_STOP"
+msgstr	"停止备份。"
+
+msgid	"IDS_ORACLE_BACKUP_PAUSE"
+msgstr  "暂停备份。"
+
+msgid	"IDS_ORACLE_BACKUP_RESUME"
+msgstr  "重新开始备份。"
+
+msgid	"IDS_GET_LISTENER_NULL"
+msgstr	"获取的监听器为空。"
+
+msgid	"IDS_TIMEPOINT_IS_EMPTY"
+msgstr	"该任务的备份时间点为空,本次备份将转为完全备份。"
+
+
+#ncOracleDatabasebManager.cpp
+msgid	"IDS_CREATE_ORACLE_MANAGER_FAILED"
+msgstr	"创建Oracle Manager组件失败。"
+
+msgid	"IDS_ORACLE_STATUS_NOT_OPEN"
+msgstr	"正在备份的Oracle实例 %s 状态为%s,请把实例启动到open状态再进行备份。"
+
+msgid	"IDS_ORACLE_NOT_ARCHIVELOG_MODE"
+msgstr	"正在备份的Oracle实例 %s 为非归档模式,请把实例切换成归档模式再进行备份。"
+
+msgid   "IDS_ORACLE_DATABASE_VERSION"
+msgstr  "正在备份的当前数据库版本是: %s。"
+
+msgid	"IDS_ORACLE_ARCHIVE_DEST_FLASHBACK_AREA"
+msgstr	"数据库归档路径为闪回区,闪回区满会影响生产业务的连续性,请将归档路径都设置成合法的非闪回区目录。"
+
+msgid	"IDS_ORACLE_ARCHIVE_ILLEGAL"
+msgstr	"正在备份的Oracle 数据库的归档路径为闪回区或者非法,为了数据的安全请配置一条合法的本地非闪回区归档路径。"
+
+msgid	"IDS_ORACLE_VERSION_NOT_SUPPORT_BCT"
+msgstr	"实例：%s 对应的数据库版本为9I，不支持Block Change Tracking 选项。"
+
+msgid	"IDS_ORACLE_TIMEPOINT_TAG_IS_EMPTY"
+msgstr	"上一个时间点的标记值为空，可能是软件升级导致，本次将转换为完全备份。F"
+
+msgid   "IDS_ORACLE_FULLTIME_POINT_IS_EMPTY"
+msgstr  "时间集中没有完全备份的时间点，为了数据安全，本次增备将转换为完备"
+
+msgid	"IDS_ORACLE_TIMEPOINT_TAG_IS_NOT_MATCH_TO_FULL"
+msgstr	"检测到任务的标记信息不匹配，为了数据安全，本次将转换为完全备份。"
+
+msgid	"IDS_ORACLE_TIMEPOINT_TAG_IS_NOT_MATCH_TO_INC"
+msgstr	"检测到任务的标记信息不匹配，为了数据安全，本次将转换为增量备份。"
+
+msgid	"IDS_ORACLE_TIMEPOINT_TAG_IS_NOT_MATCH_TO_CUMULATIVE"
+msgstr	"检测到任务的标记信息不匹配，为了数据安全，本次将转换为累积增量备份。"
+
+msgid	"IDS_CREATE_PFILE_FAILED"
+msgstr	"创建参数文件失败。"
+
+msgid	"IDS_DATABASE_OPEN_CANNOT_RESTORE"
+msgstr	"Oracle 实例: %s的状态为: %s,为了数据的安全,请把数据库实例重启到nomount或者mount再进行恢复。"
+
+msgid   "IDS_DATABASE_NOT_STARTRD_STATUS"
+msgstr  "正在恢复的Oracle 数据库实例: %s的状态为:%s,恢复控制文件需要把数据库实例置为started状态。"
+
+msgid   "IDS_DATABASE_NOT_MOUNTED_STATUS"
+msgstr  "正在恢复的Oracle 数据库实例: %s的状态为:%s,恢复归档日志文件需要把数据库实例置为MOUNTED或OPEN状态。"
+
+msgid   "IDS_DATABASE_RES_DATAFILE_NOT_MOUNTED_STATUS"
+msgstr  "正在恢复的Oracle 数据库实例: %s的状态为:%s,恢复系统数据文件:%s 需要把数据库实例置为MOUNTED状态。"
+
+msgid	"IDS_DATABASE_OPEN_CANNOT_RESTORE_DATAFILE"
+msgstr	"Oracle 实例: %s的状态为: %s,为了数据的安全,请把数据库实例重启到open或者mount再进行恢复。"
+
+msgid	"IDS_ORACLE_TABLE_IMP_FAILED"
+msgstr	"表%s 恢复失败。"
+
+msgid	"IDS_ORACLE_TABLE_EXSIT_IN_PRODUCTION_DB"
+msgstr	"Oracle 表级恢复中选择的表: %s存在于原生产库中,为了数据操作安全,请在备份生产库中重命名此表。"
+
+msgid	"IDS_AUX_DATABASE_STATUS_NOT_NOMOUNT"
+msgstr	"Oracle 辅助实例的状态为: %s,不是nomount状态,不能进行Oracle表级恢复。"
+
+msgid	"IDS_AUX_DATABASE_STATUS_NOT_OPEN"
+msgstr	"Oracle 辅助实例的状态为: %s,不是open状态,不能进行Oracle表级恢复。"
+
+msgid   "IDS_ORACLE_INPUT_DATAFILE_ERROR"
+msgstr  "您输入的数据文件名:%s与控制文件中记录的数据文件名不一致,要求输入的数据文件名是不带路径的且大小写一致。"
+
+msgid	"IDS_DATABASE_NOT_OPEN_STATUS"
+msgstr	"Oracle 实例: %s的状态为: %s,请把数据库实例重启到open再进行恢复"
+
+msgid	"IDS_GET_USER_CONFIG_FAILED"
+msgstr	"获取用户配置信息失败，用户配置文件路径：%s"
+
+
+#ncOracleRestoreSchedule.cpp
+msgid	"IDS_ORACLE_RESTORE_EXCEPTION"
+msgstr	"Oracle 恢复异常。"
+
+msgid	"IDS_ORACLE_RESTORE_UNKOWN_EXCEPTION"
+msgstr	"Oracle 恢复出现未知异常。"
+
+msgid   "IDS_ORACLE_STOP_RESTORE"
+msgstr  "正在停止Oracle恢复任务。"
+
+msgid	"IDS_ORACLE_RESTORE_PAUSE"
+msgstr	"暂停恢复。"
+
+msgid	"IDS_ORACLE_RESTORE_RESUME"
+msgstr	"重新开始恢复。"
+
+msgid   "IDS_ORACLE_DIRECTORY_NOT_EXSIT"
+msgstr  "选择的恢复路径: %s非法,请选择一条合法的路径进行恢复。"
+
+
+#ncOracleRestoreExec.cpp
+msgid	"IDS_ORACLE_RESTORE_CTRL_FAILED"
+msgstr	"恢复Oracle 控制文件失败。"
+
+msgid	"IDS_ORACLE_RESTORE_BACKUP_PIECE"
+msgstr	"正在恢复的Oracle 备份文件片为: %s。"
+
+msgid   "IDS_ORACLE_TIME_RESTORE_FAILED"
+msgstr  "Oracle恢复失败,如果是时间点恢复请确定选择的时间是否是客户端备份完成之后的客户端时间。"
+
+msgid	"IDS_CURRENT_RESRORE_FILENUM_MESSAGE"
+msgstr	"Oracle恢复当前的已恢复文件数:%s。"
+
+msgid	"IDS_BEGIN_RESTORE_TIME_POINT"
+msgstr	"开始恢复时间点：%s。"
+
+
+#ncOracleCtrlFilePopEvent.cpp
+msgid	"IDS_ORACLE_START_RESTORE_PFILE"
+msgstr	"正在恢复的参数文件是: %s。"
+
+msgid	"IDS_ORACLE_START_RESTORE_ARCHIVE"
+msgstr	"正在恢复的归档日志文件是: %s。"
+
+msgid	"IDS_ORACLE_START_RESTORE_DBTABLE"
+msgstr	"正在恢复的数据库信息文件是: %s。"
+
+msgid	"IDS_ORACLE_RESTORE_DATA_EMPTY"
+msgstr	"恢复Oracle 时发送的数据为空。"
+
+msgid	"IDS_ORACLE_WRITE_ARCH_FAILED"
+msgstr	"Oracle 恢复日志文件时出现异常。"
+
+
+#ncOracleExecThread.cpp
+msgid	"IDS_START_RMAN_EXE_ERROR"
+msgstr  "客户端启动Oracle RMAN进程失败."
+
+msgid	"IDS_START_RMAN_EXE_NOKNOWN_ERROR"
+msgstr  "客户端启动Oracle RMAN进程失败,未知异常。"
+
+msgid	"IDS_CREATE_RMAN_OUTPUT_PIPE_FAILED"
+msgstr  "客户端创建Oracle RMAN输出信息管道失败,错误码为 %d。"
+
+msgid	"IDS_CREATE_RMAN_EXE_PROCESS_FAILED"
+msgstr  "客户端启动Oracle RMAN进程失败,错误码为 %d。"
+
+msgid	"IDS_RMAN_EXITED_SCHEDULE_WILL_STOPED"
+msgstr	"检测到RMAN进程异常退出,任务将被迫停止。"
+
+msgid   "IDS_ORACLE_RMAN_OUTPUT_FAILED"
+msgstr	"RMAN输出线程出现错误,错误原因是: %s。"
+
+msgid	"IDS_ORACLE_ARC_NOT_FIND_IN_BACKUP_PICES"
+msgstr	"当前的备份集中不包含高级恢复所选择的日志文件，请确认输入是否正确。"
+
+msgid   "IDS_ORACLE_ERROR_RMAN_06026"
+msgstr  "介质服务器中没有恢复所需文件的备份集。"
+
+msgid   "IDS_ORACLE_ERROR_RMAN_06056"
+msgstr  "无法获取数据文件进行备份,原因是因为删除表空间的时候未把该对应的数据文件删除。"
+
+msgid   "IDS_ORACLE_BEFORE_RESETLOG_TIME"
+msgstr  "选择的时间不能将数据库还原到有效备份或归档重做日志。"
+
+msgid   "IDS_ORACLE_RMAN_OUTPUT_THREAD_ERROR"
+msgstr  "数据库RMAN进程执行出现异常。"
+
+msgid	"IDS_ORACLE_RMAN_OUTPUT_THREAD_UNKOWN_ERROR"
+msgstr	"RMAN输出未知错误信息。"
+
+msgid	"IDS_GET_USER_CONFIG_TRACE_FAILED"
+msgstr	"获取用户配置信息或者写TRACE配置失败，用户配置文件路径：%s"
+
+
+#ncOraclePopEvent.cpp
+msgid	"IDS_ORACLE_RESTORE_GNS_NOEXIST"
+msgstr	"恢复所需的GNS: %s在介质服务器中不存在。"
+
+
+#ncOracleScheduleCommon.cpp
+msgid   "IDS_ORACLE_DATASOURCE_NOT_EXSIT"
+msgstr  "实例名为: %s的数据源未在建备份任务的时候添加,请进行添加。"
+
+msgid	"IDS_ORACLE_RESTORE_ARCHIVE_PATH_NOLEGAL"
+msgstr	"Oracle备份服务器的归档路径: %s在恢复服务器中不存在,请用Oracle软件的安装用户进行创建。"
+
+msgid	"IDS_GET_ARCHIVE_DEST_USER_FAILED"
+msgstr	"获取归档路径：%s 属主信息失败，请请确认归档路径是否正确。"
+
+msgid	"IDS_ORACLE_ARCHIVE_DEST_USER_ROOT"
+msgstr	"Oracle的归档路径: %s的属主是root,为了使恢复出来的归档日志可用,请把此归档路径改成Oracle软件的安装用户的属组和属主。"
+
+
+#ncRmanDataManager.cpp
+msgid	"IDS_ORACLE_CREATE_SVRPIPE_FAILED"
+msgstr	"创建Oracle 服务器管道失败。"
+
+msgid	"IDS_ORACLE_CREATE_EVENTS_FAILED"
+msgstr	"创建Oracle 服务器管道对象失败。"
+
+msgid	"IDS_CLIENT_ORACLE_PIPE_CONNECT_FAILED"
+msgstr  "客户端与Oracle 的管道连接失败。"
+
+msgid	"IDS_RECEIVE_SBTINIT_MSG_FAILED"
+msgstr  "客户端接收ORA_SBTINIT 消息失败,错误码为 %d,接收的消息码为 %d。"
+
+msgid	"IDS_RECEIVE_PID_VALUE_FAILED"
+msgstr  "客户端接收Oracle pid 进程号失败,错误码为 %d,接收的消息码为 %d。"
+
+msgid	"IDS_RECEIVE_PID_MSG_FAILED"
+msgstr  "客户端接收Oracle pid 消息失败,进程号为 %s,接收的消息码长度为 %d。"
+
+msgid	"IDS_PID_MSG_OVER_FAILED"
+msgstr  "客户端往Oracle 发送ORA_PID_MSG_OVER消息失败,错误码为 %d。"
+
+msgid	"IDS_RECEIVE_NEWSET_OR_BAKEND_MSG_FAILED"
+msgstr  "客户端接收ORA_NEWSET或ORA_BAKEND消息失败,错误码为 %d,接收的消息码为 %d。"
+
+msgid	"IDS_RECEIVE_NEWSET_FILEMSG_FAILED"
+msgstr  "客户端接收NEWSET_FILEMSG消息失败,接收的错误码为 %d。"
+
+msgid	"IDS_RECEIVE_BLOCK_SIZE_FAILED"
+msgstr	"接收Oracle 发送的ORA_BLOCK_SIZE消息失败,错误码为:%d,消息码为:%d。"
+
+msgid	"IDS_RECEIVE_NEWSET_OR_BAKEND_MSG_ERROR"
+msgstr  "客户端接收的消息和ORA_NEWSET或ORA_BAKEND消息不匹配,接收的消息码为 %d。"
+
+msgid	"IDS_RECEIVE_DATASIZE_ORA_ENDSET_MSG_FAILED"
+msgstr  "客户端接收ORA_DATASIZE或ORA_ENDSET消息失败,接收的错误码为 %d。"
+
+msgid	"IDS_RECEIVE_DATASIZE_DATABLOCK_FAILED"
+msgstr  "客户端接收Oracle 发送的数据失败,接收的错误码为 %d。"
+
+msgid	"IDS_RECEIVE_DATASIZE_ENDSET_ERROR"
+msgstr  "客户端接收Oracle 发送的ORA_DATASIZE或者ORA_ENDSET消息失败,接收的消息码为 %d。"
+
+msgid	"IDS_ORACLE_RESTORE_READ_FILE_EMPTY"
+msgstr	"接收到的Oracle 恢复文件片为空。"
+
+msgid	"IDS_ORACLE_RECEIVE_BLOCK_SIZE_FAILED"
+msgstr	"正在恢复的Oracle 块大小失败,错误码为: %d。"
+
+msgid	"IDS_ORACLE_RECEIVE_SBT_RESTORE_OVER_FAILED"
+msgstr	"往Oracle 发送ORA_SBT_RESTORE_OVER消息失败,错误码为: %d。"
+
+msgid	"IDS_ORACLE_RECEIVE_STILL_DATA_MSG_FAILED"
+msgstr	"恢复时接收Oracle 发送的ORA_STILL_DATA消息失败,错误码为:%d。"
+
+msgid	"IDS_ORACLE_SEND_DATASIZE_FAILED"
+msgstr	"恢复时往Oracle 发送ORA_DATASIZE消息失败,错误码为: %d。"
+
+msgid	"IDS_RECEIVE_BAKEND_MSG_INCONSISTENT"
+msgstr	"恢复时接收Oracle 发送的ORA_BAKEND消息ID不一致,消息码为: %d。"
+
+msgid	"IDS_ORACLE_SEND_ENDSET_FAILED"
+msgstr	"恢复时往Oracle 发送ORA_ENDSET消息失败,错误码为: %d。"
+
+msgid	"IDS_ORACLE_RECEIVE_ENDSET_FAILED"
+msgstr	"恢复时接收Oracle 发送的ORA_ENDSET消息失败,错误码为: %d。"
+
+msgid	"IDS_ORACLE_RECEIVE_STILL_DATA_OR_ORA_ENDSET_FAILED"
+msgstr	"恢复时接收Oracle 发送的ORA_STILL_DATA或ORA_ENDSET消息失败,错误码为: %d,消息码为: %d。"
+
+msgid	"IDS_RECEIVE_BACKEND_MSG_FAILED"
+msgstr  "客户端接收ORA_BAKEND 消息失败,错误码为 %d。"
+
+msgid	"IDS_RECEIVE_CLOSEPIPE_MSG_FAILED"
+msgstr  "客户端接收ORA_CLOSE_PIPE 消息失败,错误码为 %d,消息码为: %d。"
+
+msgid	"IDS_SEND_CLOSE_PIPE_FAILED"
+msgstr  "客户端往Oracle 发送ORA_CLOSE_PIPE 消息失败,错误码为：%d。"
+
+msgid	"IDS_RECEIVE_MSG_FAILED"
+msgstr	"客户端接收消息异常，异常消息ID为:%d。"
+
+msgid	"IDS_SEND_CROSSCHECK_MSG_FAILED"
+msgstr	"往 Oracle 发送 ORA_SBTINIT/ORA_CROSSCHECK_BEGIN 消息失败，错误码为：%d。"
+
+msgid	"IDS_RECEIVE_CROSSCHECK_MSG_FAILED"
+msgstr	"客户端接收 ORA_CROSSCHECK_BEGIN/ORA_CROSSCHECK_END 消息失败，错误码为：%d，消息码为：%d。"
+
+msgid	"IDS_RECEIVE_PIECE_NAME_FAILED"
+msgstr	"客户端接收 Oracle backup piece 消息失败,备份片名为 %s，接收的消息码长度为 %d。"
+
+msgid	"IDS_SEND_AVAILABLE_EXPIRED_MSG_FAILED"
+msgstr	"往 Oracle 发送 ORA_CROSSCHECK_AVAILABLE/ORA_CROSSCHECK_EXPIRED 消息失败，错误码为：%d。"
+
+
+#ncOracleTablesRestoreCommon.cpp
+msgid	"IDS_ORACLE_SELECT_TABLE_NOT_EXSITS"
+msgstr	"Oracle 表级恢复选择的表:%s在此备份集中不存在,备份集中表与表空间对应信息记录在:%s文件中,可进行查询。"
+
+msgid	"IDS_ORACLE_SELECT_TABLE_DUPLICATED"
+msgstr	"单表恢复所选中的表:%s 在备份集中存在同名的表，请指定要恢复的表的属主，格式如下：sys.table(用户名.表名)。"
+
+msgid	"IDS_SELF_CONTAINED_CHECK_BEGIN"
+msgstr	"由于正在做Oracle表级恢复的数据库是%s 为11gR2版本，需要进行自包含检测，请稍等..."
+
+msgid	"IDS_SELF_CONTAINED_CHECK_SUCCESS"
+msgstr	"正在做Oracle表级恢复的数据库通过自包含检测，将排除部分表空间进行恢复。"
+
+msgid	"IDS_SELF_CONTAINED_CHECK_FAILED"
+msgstr	"正在做Oracle表级恢复的数据库未通过自包含检测，将进行全库恢复。"
+
+msgid	"IDS_CURRENT_USER_CAN_NOT_IMP_SYS_TABLE"
+msgstr	"当前用户：%s无法导入导出表%s.%s，如果此表恢复失败可切换到sys下手动导入导出此表。"
+
+msgid	"IDS_OPEN_SREVICES_MANAGER_FAILE"
+msgstr	"打开Windows服务管理器失败。"
+
+msgid	"IDS_ENUM_SREVICES_STATUS_FAILE"
+msgstr	"浏览Windows服务失败,错误码为: %d。"
+
+msgid	"IDS_CAN_NOT_FIND_FILE"
+msgstr	"获取文件：%s 失败。"
+
+msgid	"IDS_CURRENT_USER_AND_INSTALL_USER_NOT_SAME"
+msgstr	"当前用户：%s 与Oracle的安装用户：%s 不一致，请切换到Oracle安装用户下进行恢复。"
+
+msgid	"IDS_ORACLE_STAGE_PATH_NOLEGAL"
+msgstr	"Oracle 表级恢复输入的分段路径:%s非法,请输入一条空间足够恢复的合法路径。"
+
+msgid	"IDS_ORACLE_STAGE_PATH_HAVE_OTHER_FILES"
+msgstr	"Oracle 表级恢复输入的分段路径:%s下面有%d个文件,为了生产库数据恢复的安全请把stage path分段路径设置成一个空目录。"
+
+msgid	"IDS_ORACLE_SINGLE_TABLE_RESTORE_DBNAME_SAME"
+msgstr	"Oracle 表级恢复输入的辅助数据库名:%s和备份的生产数据库名:%s一致,请修改辅助数据库名。"
+
+msgid	"IDS_ORAPWD_CREATE_PASSWORD_FAILED"
+msgstr	"orapwd程序创建密码:%s失败,错误码为:%d。"
+
+msgid	"IDS_ORACLE_START_APP_FAILED"
+msgstr	"启动应用程序:%s失败,错误码为:%d。"
+
+msgid	"IDS_ORACLE_SYSTEM_SERVICE_NO_ENVIROMENT"
+msgstr	"在此Windows环境下做Oracle表级恢复时system用户下无Oracle相关的环境变量,请在服务管理器中将客户端服务用当前登录用户启动。"
+
+msgid	"IDS_ORACLE_SINGLE_TABLE_RESTORE_OVER_PROMPT"
+msgstr	"Oracle 表级恢复已经完成,为了释放磁盘和内存使用空间,可以将辅助库实例停止并删除恢复在:%s 下的数据等。"
+
+msgid	"IDS_RECREATE_BCT_FILE"
+msgstr	"重新创建块修改跟踪文件：%s。"
+
+msgid	"IDS_BEGSEQ_LARGER_THAN_CURRENT"
+msgstr	"输入的归档日志文件的起始归档序号大于当前的序号。"
+
+msgid	"IDS_ENDSEQ_LARGER_THAN_CURRENT"
+msgstr	"输入的归档日志文件的截止归档序号%s大于当前的序号%s。"
+
+msgid	"IDS_DATAFILE_ABNORMAL"
+msgstr	"数据文件 %s 的状态是：%s。"
+
+msgid	"IDS_TABLESPACE_OFFLINE"
+msgstr	"表空间 %s 的状态是：OFFLINE。"
+
+msgid	"IDS_ORACLE_DYLISTENER"
+msgstr	"Oracle 实例 %s 是动态监听。请切换到Oracle安装用户下进行恢复，或者给实例添加静态监听，并重启监听。"
+
+msgid	"IDS_FROK_FAIL"
+msgstr	"创建初始化进程失败。"
+
+msgid	"IDS_INIT_FAIL"
+msgstr	"初始化mml相关配置失败，失败信息见文件%s。"
+
